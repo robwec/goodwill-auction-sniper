@@ -12,10 +12,13 @@ I haven't used this script in months (June 2024) as of posting this, but it work
 
 4. Place fields "Title","ID","End Time","Item Value","Shipping" in snipelist.csv, one row per item you want to snipe. Old auctions won't affect the sniper but should be manually cleaned.  
 Item Value is your full estimate of the item's value. The script uses a custom formula for calculating snipe price given the shipping and some other variables (in the goodwill-sniper.py script). These can be modified and tested by loading a DF of the CSV with auctions ending in the future, and modifying the bid valuation function as desired.
+The item ID can be found in the URL of the goodwill auction.
 
-5. Once all that is done, run python3 goodwill-sniper.py
+6. Once all that is done, run python3 goodwill-sniper.py
 
-6. Each time you add new items to the .csv, close and restart the goodwill-sniper.py script again.
+7. Each time you add new items to the .csv, close and restart the goodwill-sniper.py script again.
+
+At this point you will want to test with a single low-value item ending soon to see whether the snipe actually goes through. If it does, you can go to town on this.
 
 Currently set up to snipe 7 seconds before auction end, although that's easy to change in the scripts if desired.
 
