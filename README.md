@@ -10,7 +10,7 @@ I haven't used this script in months (June 2024) as of posting this, but it work
 
 3. Run goodwill-refresh-bearer.py to refresh the active login bearer token. This may need to be done periodically, like every few days or so.
 
-4. Place fields "Title","ID","End Time","Item Value","Shipping" in snipelist.csv, one row per item you want to snipe. Old auctions won't affect the sniper but should be manually cleaned.
+4. Place fields "Title","ID","End Time","Item Value","Shipping" in snipelist.csv, one row per item you want to snipe. Old auctions won't affect the sniper but should be manually cleaned.  
 Item Value is your full estimate of the item's value. The script uses a custom formula for calculating snipe price given the shipping and some other variables (in the goodwill-sniper.py script). These can be modified and tested by loading a DF of the CSV with auctions ending in the future, and modifying the bid valuation function as desired.
 
 5. Once all that is done, run python3 goodwill-sniper.py
